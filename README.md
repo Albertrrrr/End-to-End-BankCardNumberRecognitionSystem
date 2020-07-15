@@ -18,6 +18,7 @@ GCC版本：5.5
 Nvidia CUDA版本：CUDA9.0
 
 VGGnet_fast_rcnn_iter_50000.ckpt 预训练文件
+
 链接：https://pan.baidu.com/s/1P7HdTvHFWMDxtLCBKVfwYw 提取码：dhgo
 
 ## 环境部署
@@ -130,3 +131,13 @@ GUI展示图片：
 ![](http://m.qpic.cn/psb?/V10Rz2Ti3Ob5wF/Awr4rjdRQq.9BOYhlq.voSLxZnGEOe3tej2qQLOIqsE!/b/dL8AAAAAAAAA&bo=PQfVAz0H1QMDKQw!&rf=viewer_4)
 
 ![](http://m.qpic.cn/psb?/V10Rz2Ti3Ob5wF/fBk3AvKAhif4ZMXa*.CEScFJqYhNe*nQPOJ7LA73qzw!/b/dL8AAAAAAAAA&bo=QgfXA0IH1wMDORw!&rf=viewer_4)
+
+#### 4. Aacknowledgment
+@inproceedings{dong2019method,
+  title={A Method of Bank Card Number Recognition and End-to-End Integration Based on Deep Learning},
+  author={Dong, Qinqin and Zhang, Ruixian and Jing, Chao and Wang, Kun and Zhang, Wuping and Li, Fuzhong},
+  booktitle={2019 Chinese Automation Congress (CAC)},
+  pages={5060--5063},
+  year={2019},
+  organization={IEEE}
+}
