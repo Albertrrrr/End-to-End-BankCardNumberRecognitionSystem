@@ -1,4 +1,14 @@
 # And-End-to-End-Bank-Card-Number-Recognition-System
+## Aacknowledgment
+@inproceedings{dong2019method,
+  title={A Method of Bank Card Number Recognition and End-to-End Integration Based on Deep Learning},
+  author={Dong, Qinqin and Zhang, Ruixian and Jing, Chao and Wang, Kun and Zhang, Wuping and Li, Fuzhong},
+  booktitle={2019 Chinese Automation Congress (CAC)},
+  pages={5060--5063},
+  year={2019},
+  organization={IEEE}
+}
+
 ## 简介
 基于改进的CTPN+DenseNet的银行卡识别系统
 
@@ -132,12 +142,4 @@ GUI展示图片：
 
 ![](http://m.qpic.cn/psb?/V10Rz2Ti3Ob5wF/fBk3AvKAhif4ZMXa*.CEScFJqYhNe*nQPOJ7LA73qzw!/b/dL8AAAAAAAAA&bo=QgfXA0IH1wMDORw!&rf=viewer_4)
 
-#### 4. Aacknowledgment
-@inproceedings{dong2019method,
-  title={A Method of Bank Card Number Recognition and End-to-End Integration Based on Deep Learning},
-  author={Dong, Qinqin and Zhang, Ruixian and Jing, Chao and Wang, Kun and Zhang, Wuping and Li, Fuzhong},
-  booktitle={2019 Chinese Automation Congress (CAC)},
-  pages={5060--5063},
-  year={2019},
-  organization={IEEE}
-}
+
