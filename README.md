@@ -17,6 +17,9 @@ GCC版本：5.5
 
 Nvidia CUDA版本：CUDA9.0
 
+VGGnet_fast_rcnn_iter_50000.ckpt 预训练文件
+链接：https://pan.baidu.com/s/1P7HdTvHFWMDxtLCBKVfwYw 提取码：dhgo
+
 ## 环境部署
 进入SourceCode目录后 创建新的anaconda虚拟环境并进入
 
