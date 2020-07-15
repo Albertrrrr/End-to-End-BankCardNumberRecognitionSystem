@@ -1,0 +1,270 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"
+          name="viewport">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+    <title>银行卡识别</title>
+    <style type="text/css">
+        * {
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        /*.v{
+          padding-top: 100px;
+          width: auto;
+        }*/
+        .top {
+            background-color: rgb(54, 54, 54);
+            height: 100px;
+            width: 100%;
+            position: fixed;
+        }
+
+        #logo img {
+            width: auto;
+            height: 80px;
+            float: left;
+            padding-left: 30px;
+            margin: 0 auto;
+            padding-top: 10px;
+        }
+
+        #nav {
+            font-family: cursive;
+            font-size: 2.1rem;
+            color: #FFFFFF;
+            padding-left: 150px;
+            padding-top: 30px;
+        }
+
+        #center {
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url("static/banner.png");
+            background-size: 100%;
+            width: auto;
+            height: 580px;
+        }
+
+        #wz1 {
+            color: #FFF;
+            padding-top: 200px;
+            padding-left: 100px;
+        }
+
+        #wz2 {
+            font-family: Times New Roman;
+            text-align: center;
+            padding-top: 25px;
+        }
+
+        #wz3 {
+            font-family: Times New Roman;
+            text-align: center;
+            padding-top: 15px;
+        }
+
+        textarea.text {
+            width: 100%;
+            height: 100%;
+        }
+
+        #xia {
+            height: 50px;
+            width: auto;
+            background-color: black;
+
+        }
+
+        #wz5 {
+            color: #333333;
+            text-align: center;
+            padding-top: 15px;
+        }
+    </style>
+    <style type="text/css">
+        .alert-info {
+            color: #0c5460;
+            background-color: #d1ecf1;
+            border-color: #bee5eb;
+        }
+
+        .alert {
+            position: relative;
+            padding: .75rem 1.25rem;
+            margin-bottom: 1rem;
+            border: 1px solid transparent;
+            border-radius: .25rem;
+        }
+
+        hr
+        {
+            border: 0;
+            border-top: 1px, solid, rgba(0, 0, 0, 1);
+            box-sizing: content-box;
+            height: 0;
+            overflow: visible;
+        }
+    </style>
+    <link href="static/loaders.min.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="top">
+    <div id="logo"><a href="#"><img boder="0" src="static/rjxy.jpg"></a></div>
+    <div id="nav">
+        山西农业大学软件学院NerverMore队 基于深度学习的银行卡识别系统
+    </div>
+</div>
+<hr color="#FFFFFF" size="2" width="100%"/>
+<div id="center">
+    <div id="wz1">
+        <font style="line-height: 1.5;">
+            <h1>银行卡识别</h1>
+            <p style="line-height: 200%">检测图片中的银行卡，并返回银行卡卡片边框坐标、银行卡号码<br>该技术支持多种不同金融机构的银行卡<br>可适应倾斜/模糊等场景</p>
+        </font>
+    </div>
+</div>
+<div align="center" style="padding-top: 50px" id="wz4"><h1>应用场景</h1>
+    <hr color="#FFFFFF" size="20" width="100%"/>
+    <hr align="center" color="black" size="2" width="50px"/>
+</div>
+<div>
+    <table cellspacing="50">
+        <tr>
+            <td><img height="250" id="img1" src="static/sj.jpg" width="400"><br><br>
+                <p align="center">银行卡支付绑定
+                <p></td>
+            <td><img height="250" id="img2" src="static/ka.jpg" width="400"><br><br>
+                <p align="center">金融远程身份认证</td>
+        </tr>
+    </table>
+</div>
+<div id="wz2">
+    <h1>功能演示</h1>
+</div>
+<hr color="#FFFFFF" size="20" width="100%"/>
+<hr align="center" color="black" size="2" width="50px"/>
+<!-- <hr style="position:absolute;left:30px;">  -->
+<div id="wz3">
+    <p style="line-height: 200%">即刻体验我们的银行卡识别能力。请上传一张本地图片。<br>
+        请你注意拍摄,请基本与以下图片形式保持一致。</p>
+</div>
+<hr color="#FFFFFF" size="50" width="100%"/>
+
+<div style="padding-bottom: 120px;">
+    <div id="left2">
+        <table cellspacing="100">
+            <tr>
+                <td bgcolor="gray" style="border: 1px solid #000; border-radius: .25rem;">
+                    <img height="350" id="img0" src="static/yhk.png" width="500">
+                    <span align="center"><form action="" enctype='multipart/form-data' id="form" method="post"
+                                               name="form">
+                        <br/>
+        <input height="100" id="file0" multiple="multiple" name="file0" onchange="uploadImage(this)" type="file">
+                        <br>
+        </form></span>
+                </td>
+                <td align="top" height="370" width="500">
+                    <div id="result" style="height: 100%; width: 100%; border: 1px solid #000; border-radius: .25rem;">
+                        <div id="result-container">
+                            <div class="alert alert-info" role="alert" style="height: 100%; text-align: center">
+                                结果显示
+                            </div>
+                            <div id="text-result">银行卡卡号:5361138888888888</div>
+                        </div>
+                        <!-- 动态加载等待 -->
+                        <div class="loader-container" style="background-color: gray; width: 100%; height: 100%">
+                            <div class="loader-inner ball-pulse" style="position: relative; top: 45%; left: 45%;">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+<hr color="#FFFFFF" size="160" width="100%"/>
+<div id="xia">
+    <div id="wz5">
+        <p style="color: #666666;">&copy; 2019-2020 山西农业大学软件学院 版权所有</p>
+    </div>
+</div>
+<script src="static/jquery-3.4.1.min.js" type="text/javascript"></script>
+<script src="static/loaders.css.js" type="text/javascript"></script>
+<script src="static/jquery.form.js" type="text/javascript"></script>
+<script type="text/javascript">
+    var isShow = false;
+    window.onload = function () {
+        isShow = false;
+        $('.loader-container').css('display', 'none');
+    };
+
+    function start() {
+        if (isShow) {
+            $('.loader-container').css('display', 'none');
+            $('#result-container').css('display', 'block');
+            isShow = !isShow;
+        } else {
+            $('.loader-container').css('display', 'block');
+            $('#result-container').css('display', 'none');
+            isShow = !isShow;
+        }
+    }
+</script>
+<script>
+    function uploadImage(obj) {
+        $('#text-result').html('');
+        var file = obj.files[0];
+
+        var formData = new FormData();
+        formData.append("file0", file);
+
+        start();
+        $.ajax({
+            url: '/',
+            type: "POST",
+            data: formData,
+            cache: false,
+            processData: false,
+            contentType: false,
+            success: function (result) {
+                start();
+                console.log(result);
+                $('#text-result').append('<p>' + '银行卡卡号:' + result['银行卡卡号:'] + '</p>')
+            }
+        })
+    }
+</script>
+<script>
+    $("#file0").change(function () {
+        var objUrl = getObjectURL(this.files[0]);
+        console.log("objUrl = " + objUrl);
+        if (objUrl) {
+            $("#img0").attr("src", objUrl);
+            // $("#img0").removeClass("hide");
+        }
+    });
+
+    //建立一個可存取到該file的url
+    function getObjectURL(file) {
+        var url = null;
+        if (window.createObjectURL != undefined) { // basic
+            url = window.createObjectURL(file);
+        } else if (window.URL != undefined) {
+            // mozilla(firefox)
+            url = window.URL.createObjectURL(file);
+        } else if (window.webkitURL != undefined) {
+            // webkit or chrome
+            url = window.webkitURL.createObjectURL(file);
+        }
+        return url;
+    }
+</script>
+</body>
+</html>
