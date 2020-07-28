@@ -1,4 +1,4 @@
-# And-End-to-End-Bank-Card-Number-Recognition-System
+# An End-to-End Bank Card Number Recognition System
 ## Aacknowledgment
 @inproceedings{dong2019method,
   title={A Method of Bank Card Number Recognition and End-to-End Integration Based on Deep Learning},
