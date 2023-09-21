@@ -134,12 +134,4 @@ pip install flask
 
 改完后再运行app.py程序即可看到GUI
 
-GUI展示图片：
-
-![](http://a4.qpic.cn/psb?/V10Rz2Ti3Ob5wF/Pi6mJ9ws2nn8Ltkhg1YWLf4r*pNluxPlTu6lk2qQ5eE!/b/dDcBAAAAAAAA&ek=1&kp=1&pt=0&bo=QAfVA0AH1QMDSWw!&tl=1&vuin=419826520&tm=1559628000&sce=60-4-3&rf=viewer_4)
-
-![](http://m.qpic.cn/psb?/V10Rz2Ti3Ob5wF/Awr4rjdRQq.9BOYhlq.voSLxZnGEOe3tej2qQLOIqsE!/b/dL8AAAAAAAAA&bo=PQfVAz0H1QMDKQw!&rf=viewer_4)
-
-![](http://m.qpic.cn/psb?/V10Rz2Ti3Ob5wF/fBk3AvKAhif4ZMXa*.CEScFJqYhNe*nQPOJ7LA73qzw!/b/dL8AAAAAAAAA&bo=QgfXA0IH1wMDORw!&rf=viewer_4)
-
 
